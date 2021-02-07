@@ -2,26 +2,23 @@ package services;
 
 import java.util.ArrayList;
 
-import entities.Produtos_Problema1;
-
 public class ServicesProdutos_Problema1 {
 	
-	public static String maiorPreco( ArrayList<Produtos_Problema1> lista) {
+	public static <T extends Comparable<T> > T maiorPreco( ArrayList<T> lista) {
 		
-		double max = 0;
-		String retorno = "";
+		T max = lista.get(0);
+
 		if(lista.isEmpty()) {
 			System.out.println("Erro, lista vazia");
 		}
 		
-		for(Produtos_Problema1 x : lista) {
-			if (max < x.getPreco()) {
-				max = x.getPreco();
-				retorno = x.toString();
+		for(T x : lista) {
+			if (x.compareTo(max) > 0) {
+				max = x;
 			}
 		}
 		
-		return retorno;
+		return max;
 	}
 	
 	

@@ -12,9 +12,9 @@ public class Program_Problema1 {
 	public static void main(String[] args) {
 		
 		String caminho = ".\\.\\PastaBase";
-		String arquivo = ".\\.\\PastaBase\\ListaProdutos.txt";
+		String arquivo = "\\ListaProdutos.txt";
 		
-		try ( BufferedReader br = new BufferedReader(new FileReader(arquivo))){
+		try ( BufferedReader br = new BufferedReader(new FileReader(caminho+arquivo))){
 			ArrayList<Produtos_Problema1> lista = new ArrayList<>();
 				
 			String[] item;
@@ -28,7 +28,9 @@ public class Program_Problema1 {
 			}
 			System.out.println();
 			System.out.println("Maior Preço: ");
-			System.out.println(ServicesProdutos_Problema1.maiorPreco(lista));
+			Produtos_Problema1 maior = ServicesProdutos_Problema1.maiorPreco(lista);
+			System.out.println(maior.toString());
+			
 			
 		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
