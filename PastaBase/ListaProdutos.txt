@@ -1,0 +1,3 @@
+Computador, 890.50
+IphoneX, 910.00
+Tableet, 550.0
