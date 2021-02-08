@@ -4,8 +4,14 @@ import java.util.ArrayList;
 
 public class ServicesProdutos_Problema1 {
 	
+	/*
+	 * static <t extends Comparable<? super T>> T maiorPreco(...)
+	 * Dessa forma é: um tipo comparavel T ou qualquer super classe de T.
+	 * 
+	 * public static <T extends Comparable<T> > T maiorPreco( ArrayList<T> lista) {
+	 * 
+	 */
 	public static <T extends Comparable<T> > T maiorPreco( ArrayList<T> lista) {
-		
 		T max = lista.get(0);
 
 		if(lista.isEmpty()) {

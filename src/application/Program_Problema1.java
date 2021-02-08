@@ -22,7 +22,7 @@ public class Program_Problema1 {
 			
 			while(line!=null) {
 				item = line.split(",");
-				System.out.println("Nome: " + item[0] + " - R$: " + item[1] );
+				System.out.println("Nome: " + item[0] + " - R$:" + item[1] );
 				lista.add(new Produtos_Problema1(item[0], Double.parseDouble(item[1])));
 				line = br.readLine();
 			}
