@@ -1,7 +1,5 @@
 package entities;
 
-import javax.print.attribute.standard.MediaSize.Other;
-
 public class Produtos_Problema1 implements Comparable<Produtos_Problema1>{
 	
 	private String nome;
