@@ -25,7 +25,7 @@ public class Program_Problema4_Equals_HashCode {
 		System.out.println(c1 == c4); //Procura a localização na memória
 		System.out.println(s1 == s2); //Faz a verificação "Literal"
 		System.out.println(s3 == s4); //Procura a localização na memória
-		System.out.println(s1 == s4); //???
+		System.out.println(s1 == s4);
 
 	}
 }
