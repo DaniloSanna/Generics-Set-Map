@@ -32,7 +32,7 @@ public class Program_Exemplo54 {
 			
 			/*
 			 * O HashSet, por conta do hashCode e Equals focando só em nome, 
-			 * não armazena valores duplicadosw.
+			 * não armazena valores duplicados.
 			 * 
 			 */
 			System.out.println("Users");
