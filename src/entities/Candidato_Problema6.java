@@ -17,10 +17,6 @@ public class Candidato_Problema6 {
 		return qtdvotos;
 	}
 
-	public void setQtdvotos(int qtdvotos) {
-		this.qtdvotos += qtdvotos;
-	}
-
 	@Override
 	public String toString() {
 		return nome;

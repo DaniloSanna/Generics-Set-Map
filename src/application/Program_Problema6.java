@@ -39,7 +39,7 @@ public class Program_Problema6 {
 			}
 			
 			System.out.println();
-			System.out.println("Candidato: ");
+			System.out.println("Candidatos: ");
 			for(Candidato_Problema6 key : eleicao.keySet() ) {
 				System.out.println(key + ": "+ eleicao.get(key));
 			}
