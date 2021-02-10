@@ -1,10 +1,10 @@
 package entities;
 
-public class Produto_Problema52 {
+public class Produto_Problema53 implements Comparable<Produto_Problema53>{
 	private String name;
 	private Double price;
 
-	public Produto_Problema52(String name, Double price) {
+	public Produto_Problema53(String name, Double price) {
 		this.name = name;
 		this.price = price;
 	}
@@ -42,7 +42,7 @@ public class Produto_Problema52 {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Produto_Problema52 other = (Produto_Problema52) obj;
+		Produto_Problema53 other = (Produto_Problema53) obj;
 		if (name == null) {
 			if (other.name != null)
 				return false;
@@ -55,5 +55,16 @@ public class Produto_Problema52 {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Produto_Problema52 [name=" + name + ", price=" + price + "]";
+	}
+
+	@Override
+	public int compareTo(Produto_Problema53 other) {
+		return name.toUpperCase().compareTo(other.getName().toUpperCase());
+	}
+	
 	
 }
