@@ -13,6 +13,7 @@ public class Program_Exemplo6 {
 		cookies.put("email", "maria@gmail.com");
 		cookies.put("phone", "99711122");
 		System.out.println("All Cookies: ");
+		
 		for(String key : cookies.keySet()) {
 			System.out.println(key + ": "+ cookies.get(key));
 		}
@@ -34,6 +35,7 @@ public class Program_Exemplo6 {
 		
 		System.out.println();
 		System.out.println("Contains 'phone' key: " + cookies.containsKey("phone"));
+		System.out.println("Contains 'phone' content: " + cookies.get("phone"));
 		System.out.println("Contains 'email' key: " + cookies.get("email"));
 		System.out.println("Size: " + cookies.size());
 		
